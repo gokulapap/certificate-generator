@@ -45,5 +45,7 @@ def certificate(name):
 #	return send_file("/home/pagania/remove/certi_gen/templates/{}.jpg".format(name), as_attachment = True)
 	return render_template("{}.html".format(name))
 
-app.run()
+if __name__ == "__main__":
+	app.run(port=5000)
+
 
