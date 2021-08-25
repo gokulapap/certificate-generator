@@ -23,12 +23,12 @@ def hello():
 
 @app.route("/certificate/<name>")
 def certificate(name):
-	img = Image.open('/home/pagania/remove/certi_gen/certificate.jpg')
+	img = Image.open('/app/certificate.jpg')
 	draw = ImageDraw.Draw(img)
 	w, h = draw.textsize(name)
 	draw.text(xy=((W-w)/2 - w/2,360),text='{}'.format(name),fill=(0,0,0),font=font)
-	img.save('/home/pagania/remove/certi_gen/static/images/{}.jpg'.format(name))
-	f = open("/home/pagania/remove/certi_gen/templates/{}.html".format(name), "w")
+	img.save('/app/static/images/{}.jpg'.format(name))
+	f = open("/app/templates/{}.html".format(name), "w")
 	f.write('''
 	<html>
 	<head>
