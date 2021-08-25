@@ -42,7 +42,6 @@ def certificate(name):
 	</html>
 	'''.format(name))
 	f.close()
-#	return send_file("/home/pagania/remove/certi_gen/templates/{}.jpg".format(name), as_attachment = True)
 	return render_template("{}.html".format(name))
 
 if __name__ == "__main__":
