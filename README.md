@@ -1,7 +1,9 @@
 # Certificate-generator
 A Flask application for Bulk certificate generation
 
+# deploy your application
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/gokulapap/certificate-generator)
 
 # demo video
 
