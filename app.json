@@ -1,0 +1,7 @@
+{
+  "name": "certificate generator",
+  "description": "A Certificate generator flask application",
+  "repository": "https://github.com/gokulapap/certificate-generator",
+  "logo": "https://i.imgur.com/ZyBu7n3.png",
+  "keywords": ["python", "certificate", "generator"]
+}
