@@ -16,7 +16,7 @@ def hello():
 	<u><h1>Certificate Generator</h1></u>
 	<br><br>
 
-	<h3>Go to this URL to generate your certificate <br><br> https://certificate-creator.herokuapp.com/certificate/{name}</h3>
+	<h3>Add this to the URL to generate your certificate <br><br> /certificate/{name}</h3>
 
 	</center>
 	'''
