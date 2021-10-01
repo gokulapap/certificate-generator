@@ -5,7 +5,7 @@ import os
 
 font = ImageFont.truetype("arial.ttf", 50)
 
-W = 1000
+W = 1056
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def certificate(name):
 	img = Image.open('/app/certificate.jpg')
 	draw = ImageDraw.Draw(img)
 	w, h = draw.textsize(name)
-	draw.text(xy=((W-w)/2 - w/2,360),text='{}'.format(name),fill=(0,0,0),font=font)
+	draw.text(xy=((W-w)/2 + w/2 + 10, 410),text='{}'.format(name), fill=(0,0,0), font=font, anchor="ms")
 	# must add the absolute path of the folders
 	img.save('/app/static/images/{}.jpg'.format(name))
 	f = open("/app/templates/{}.html".format(name), "w")
