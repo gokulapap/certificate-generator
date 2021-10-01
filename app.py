@@ -5,8 +5,6 @@ import os
 
 font = ImageFont.truetype("arial.ttf", 50)
 
-W = 1056
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -26,6 +24,7 @@ def hello():
 @app.route("/certificate/<name>")
 def certificate(name):
 	img = Image.open('/app/certificate.jpg')
+	W = img.size[0]
 	draw = ImageDraw.Draw(img)
 	w, h = draw.textsize(name)
 	draw.text(xy=((W-w)/2 + w/2 + 10, 410),text='{}'.format(name), fill=(0,0,0), font=font, anchor="ms")
